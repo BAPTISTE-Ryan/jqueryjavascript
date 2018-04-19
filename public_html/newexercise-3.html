@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function Employe(nom, fonction, salaire){
+                this.nom=nom;
+                this.fonction=fonction;
+                this.salaire=salaire;
+                
+            }
+            Employe.prototype.afficher=function(){
+                    return this.nom+''+this.fonction+this.salaire;
+                };
+                
+            var pierre=new Employe('Pierre','Developpeur','3000 zeuro');
+            console.log(pierre);
+             console.log(pierre.afficher());
+        </script>
+    </head>
+    <body>
+        <div id="page">
+
+           
+            <img src="img/Desert.jpg" alt=""/>
+
+
+        </div>
+    </body>
+</html>

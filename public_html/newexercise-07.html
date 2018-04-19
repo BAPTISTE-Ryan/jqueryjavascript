@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TAB</title>
+    <link href="css/newcss.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/lib/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').bind('click', function () {
+                $('<a href="https://codepen.io/jackismissing/pen/pwwGJE">CodePen <br></a>').appendTo('#result');
+            });
+
+            // var btn = document.querySelector('#btn');
+            //         btn.addEventListener('click', function () {
+            //             // alert('ok');
+            //             var result = document.querySelector('#result');
+            //             var a = document.createElement('a');
+            //             a.href = "https://codepen.io/jackismissing/pen/pwwGJE";
+            //             a.innerHTML = "CodePen <br> \n ";
+            //             result.appendChild(a);
+            //         });
+
+            $('#btn2').bind('click',function(){
+                $('#result a').each(function(){
+                        var content=this.innerHTML;
+                        $(' #result').append(content)
+                        this.remove();
+                });
+
+            });
+
+            // var btn2 = document.querySelector('#btn2');
+            // btn2.onclick = function () {
+            //     var result = document.querySelector('#result');
+            //     var coLA = result.querySelectorAll('a');
+            //     for (var i = coLA.length - 1; i >= 0; i--) {
+
+            //         var a = coLA[i];
+            //         var content = a.innerHTML;
+            //         result.removeChild(a);
+            //         var text = document.createTextNode(content);
+            //         result.appendChild(text);
+
+            //    }
+            // };
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div id="page">
+
+
+        <button id="btn">Ajouter un lien</button>
+        <button id="btn2">Aefacer eun lyen</button>
+
+        <div id="result"></div>
+
+        <progress value="0.05"></progress>
+        <progress value="0.05"></progress>
+        <br>
+        <progress value="0.1"></progress>
+        <progress value="0.1"></progress>
+        <br>
+        <progress value="0.15"></progress>
+        <progress value="0.15"></progress>
+        <br>
+        <progress value="0.2"></progress>
+        <progress value="0.2"></progress>
+        <br>
+        <progress value="0.25"></progress>
+        <progress value="0.25"></progress>
+        <br>
+        <progress value="0.3"></progress>
+        <progress value="0.3"></progress>
+        <br>
+        <progress value="0.35"></progress>
+        <progress value="0.35"></progress>
+        <br>
+        <progress value="0.4"></progress>
+        <progress value="0.4"></progress>
+        <br>
+        <progress value="0.45"></progress>
+        <progress value="0.45"></progress>
+        <br>
+        <progress value="0.5"></progress>
+        <progress value="0.5"></progress>
+        <br>
+        <progress value="0.55"></progress>
+        <progress value="0.45"></progress>
+        <br>
+        <progress value="0.6"></progress>
+        <progress value="0.40"></progress>
+        <br>
+        <progress value="0.65"></progress>
+        <progress value="0.35"></progress>
+        <br>
+        <progress value="0.7"></progress>
+        <progress value="0.3"></progress>
+        <br>
+        <progress value="0.75"></progress>
+        <progress value="0.25"></progress>
+        <br>
+        <progress value="0.8"></progress>
+        <progress value="0.2"></progress>
+        <br>
+        <progress value="0.85"></progress>
+        <progress value="0.15"></progress>
+        <br>
+        <progress value="0.9"></progress>
+        <progress value="0.1"></progress>
+        <br>
+        <progress value="0.95"></progress>
+        <progress value="0.05"></progress>
+        <br>
+        <progress value="1.0"></progress>
+        <progress value="0.025"></progress>
+        <br>
+
+
+
+    </div>
+</body>
+
+</html>

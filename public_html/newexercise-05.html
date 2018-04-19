@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link href="css/newcss.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+
+            function init() {
+                var tr = document.querySelector('thead tr');
+                var th = document.createElement('th');
+                tr.appendChild(th);
+
+                var colTr = document.querySelectorAll('tbody tr');
+                for (var i = 0; i < colTr.length; i++) {
+
+                    tr = colTr[i];
+                    var td = document.createElement('td');
+                    tr.appendChild(td);
+
+                    var img = document.createElement('img');
+                    img.src = 'img/deleteuser.png';
+                    img.title = 'Supprimer l\'utilisateur';
+                    td.appendChild(img);
+
+                    img.onclick = function () {
+                        var tr =this.closest('tr');
+                        var tbody = tr.parentNode;
+                        tbody.removeChild(tr);
+                    }
+                }
+
+            }
+            window.addEventListener('load', init);
+        </script>
+
+
+    </head>
+    <body>
+
+        <table>   
+            <thead>
+
+
+                <tr>
+                    <th>numero</th>
+                    <th>nom</th>
+                    <th>prenom</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>DE LAVARE DE ST ANTOINE PASQUELBEAU</td>
+                    <td>dupont</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>DOUGOUJAMBA</td>
+                    <td>babatunde</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>HORZENWILCOWITZ</td>
+                    <td>maria</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>CHRAIBI</td>
+                    <td>abdou</td>
+
+
+                </tr>
+            </tbody>
+
+
+        </table> 
+
+
+
+        <div></div>
+
+
+
+
+
+        <div id="page">
+
+
+
+
+
+
+
+
+            <progress value="0.0" ></progress><progress value="1" ></progress> <br>
+            <progress value="0.1" ></progress><progress value="1" ></progress> <br>
+            <progress value="0.15" ></progress><progress value="0.95" ></progress> <br>
+            <progress value="0.2" ></progress><progress value="0.9" ></progress> <br>
+            <progress value="0.25" ></progress><progress value="0.85" ></progress> <br>
+            <progress value="0.3" ></progress><progress value="0.8" ></progress> <br>
+            <progress value="0.35" ></progress><progress value="0.75" ></progress> <br>
+            <progress value="0.4" ></progress><progress value="0.7" ></progress> <br>
+            <progress value="0.45" ></progress><progress value="0.65" ></progress> <br>
+            <progress value="0.5" ></progress><progress value="0.6" ></progress> <br>
+            <progress value="0.55" ></progress><progress value="0.55" ></progress> <br>
+            <progress value="0.6" ></progress><progress value="0.5" ></progress> <br>
+            <progress value="0.65" ></progress><progress value="0.45" ></progress> <br>
+            <progress value="0.7" ></progress><progress value="0.4" ></progress> <br>
+            <progress value="0.75" ></progress><progress value="0.35" ></progress> <br>
+            <progress value="0.8" ></progress><progress value="0.3" ></progress> <br>
+            <progress value="0.85" ></progress><progress value="0.25" ></progress> <br>
+            <progress value="0.9" ></progress><progress value="0.2" ></progress> <br>
+            <progress value="0.95" ></progress><progress value="0.15" ></progress> <br>
+            <progress value="1.0" ></progress><progress value="0.1" ></progress> <br>
+
+
+
+
+
+        </div>
+    </body>
+</html>
